@@ -116,14 +116,6 @@ color: #003B5C;
     text-decoration: none;
     padding-left: 35%;
 }
-
-/* .H1
-{
-    margin-top: 7%;
-    text-align: center;
-    color: #003B5C;
-    font-family: Alegreya;
-} */
 .framed {
     display: flex;
     align-items: center;
@@ -143,7 +135,7 @@ color: #003B5C;
     padding: 0.4% 2.5% 0.4% 2.5%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: HK Grotesk;
+    font-family: hk_groteskblack;
     border: 1px #e5dbd1 solid;
     box-shadow: 4px 5px 0px #e5dbd1;
   }
@@ -171,7 +163,7 @@ color: #003B5C;
     padding: 0.4% 2.5% 0.4% 2.5%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: HK Grotesk;
+    font-family: hk_groteskblack;
     border: 1px #e5dbd1 solid;
     box-shadow: 4px 5px 0px #e5dbd1;
   }
@@ -441,38 +433,62 @@ footer div{
         width: 138%;
     }
 }
-@media screen and (max-width: 420px)
+@media screen and (max-width: 400px)
 {
     header{
-        width: 250%;
+        DISPLAY: BLOCK;
+        width: 100%;
+    }
+    #meteo{
+        margin-left: 12%;
+    }
+    #infos{
+        margin-left: 10%;
+        margin-top: 5%;
     }
     #nav{
-        width: 180%;
+        width: 2%;
     }
-    .img-wrapper
+    .img-wrapper{
+        margin-left: -100px;
+    }
+    .img-wrapper img
     {
-        width: auto;
+        width: 330px;
+        MARGIN-LEFT: -20px;
+        height: 237px;
     }
     #banniere-description1
     {
-        width: 250%;
-        padding-left: 50%;
+        width: 150%;
+        padding-left: 10%;
+        margin-left: -140px;
         margin-bottom: 20%;
+    }
+    #banniere-description1 a{
+        padding-left: 30%;
+    }
+    #wrapper-sky {
+        margin-left: -140px;
     }
     #banniere-description2
     {
-        width: 250%;
-        padding-left: 30%;
+        width: 200%;
+        padding-left: 10%;
+        margin-left: -200px;
+        margin-bottom: 20%;
     }
     .framed{
-        WIDTH: 260%;
+        WIDTH: 100%;
+        MARGIN-LEFT: -12px;
     }
     .framed2{
-        WIDTH: 260%; 
-        margin-top: 100%;
+        WIDTH: 100%;
+        MARGIN-LEFT: -12px;
+        margin-top: 90%;
     }
     .menu{
-        width: 250%;
+        width: 20%;
     }
     .articles{
         display: block; 
@@ -482,24 +498,48 @@ footer div{
     .articles article
     {
         margin-top: 5%;
-        margin-left: 70%;
+        margin-left: -20px;
+    }
+    .img-artiles{
+        width: 360px;
+    }
+    .titre {
+        width: 90%;
     }
     #newsletter-fond
     {
-        WIDTH: 225%;
+        WIDTH: 90%;
+        height: 70%;
+        MARGIN-LEFT: -20px;
+    }
+               
+    #img-newsletter{
+        WIDTH: 100%;
+    height: 100%;
     }
     #newsletter-texte
     {
-        padding-left: 40%;
-        width: 150%;
+        width: 70%;
+    padding-top: 0;
+    margin-left: 10%;
     }
     #newsletter-texte a{
-        margin-left: 33%;
+        margin-left: 18%;
     }
     footer{
-        width: 250%;
+        width: 100%;
+    height: 100%;
+    display: block;
     }
     
 
+
+}
+@font-face {
+    font-family: 'hk_groteskblack';
+    src: url('/font-web/hkgrotesk-black-webfont.woff2') format('woff2'),
+         url('/font-web/hkgrotesk-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
